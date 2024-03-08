@@ -82,4 +82,26 @@ insert into order_items(order_item_id,order_id,product_id,quantity) values
 (7893,2004,104,2),
 (7894,2005,105,1);
 
+------functionalities
+
+-----1. createProduct()
+
+insert into products(product_id,prod_name,prod_price,prod_description,stock_Quantity) values 
+(106,'Tripod',1900,'Reduce your difficulties to shoot',10);
+
+-----2. createCustomer()
+
+insert into customers(customer_id,customer_name,customer_email,customer_password)
+values 
+(6,'Rahul','rahul@gmail.com','passwordrahul');
+
+-----3.get order from customer
+
+select order_id from Orders
+where customer_id=1
+
+----4. remove from cart
+
+delete from Cart where product_id=104
+
 
